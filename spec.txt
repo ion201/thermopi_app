@@ -1,5 +1,6 @@
 Get status json formatted:
     http://<domain.com>/api
+See: https://github.com/ion201/thermopi/blob/master/templates/api.html
 
 Setting information, first send a get request to get a 'salt' (must be done before every new request):
     salt = http://<domain.com>/apigensalt?user=<user>
