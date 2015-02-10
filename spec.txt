@@ -1,0 +1,14 @@
+Get status json formatted:
+    http://<domain.com>/api
+
+Setting information, first send a get request to get a 'salt' (must be done before every new request):
+    salt = http://<domain.com>/apigensalt?user=<user>
+Process the user password from plain text:
+    hash = md5sum(md5sum(<plaintext_passwd>) + <salt>)
+Send a get request with args:
+    http://<domain.com>/setstate?user=<user>&password_hash=<hash>&...
+    Possible args (all optional):
+        status_heat=[on/off/auto]
+        status_ac=[on/off/auto]
+        status_fan=[on/auto]
+        trigger_temp=[int]
