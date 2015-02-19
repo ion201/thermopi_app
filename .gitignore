@@ -1,1 +1,11 @@
-
+.gradle
+/local.properties
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.DS_Store
+/build
+Thunbs.db
+*.apk
+*.ap_
